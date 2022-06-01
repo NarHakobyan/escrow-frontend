@@ -4,6 +4,7 @@ import plugin from 'windicss/plugin';
 
 export default defineConfig({
   attributify: true,
+  prefix: 'w:',
   darkMode: 'class', // or 'media'
   theme: {
     extend: {
