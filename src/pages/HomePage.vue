@@ -3,7 +3,7 @@ import WavePortalArtifact from '../../../escrow-contracts/artifacts/contracts/Wa
 import { WavePortal } from '../../../escrow-contracts/typechain/WavePortal';
 import { ref } from 'vue';
 import { ethers } from 'ethers';
-import HeaderBar from '@/components/HeaderBar.vue';
+import HeaderBar from '~/components/HeaderBar.vue';
 
 const { ethereum } = window;
 

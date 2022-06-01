@@ -1,5 +1,8 @@
 <script setup lang="ts">
 defineProps<{ msg: string }>();
+defineEmits<{
+  count: number;
+}>();
 </script>
 
 <template>

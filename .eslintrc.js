@@ -26,7 +26,14 @@ module.exports = {
   ],
   plugins: [],
   rules: {
+    'vue/multi-word-component-names': 'off',
     'vue/script-setup-uses-vars': 'error',
+    'vue/define-macros-order': [
+      'error',
+      {
+        order: ['defineProps', 'defineEmits'],
+      },
+    ],
     'prettier/prettier': [
       'error',
       {
