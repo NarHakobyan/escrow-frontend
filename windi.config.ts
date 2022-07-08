@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
 import { defineConfig } from 'windicss/helpers';
 import colors from 'windicss/colors';
 import plugin from 'windicss/plugin';
@@ -80,6 +81,7 @@ export default defineConfig({
         variants('skew'),
       );
     }),
+    require('daisyui'),
     require('windicss/plugin/filters'),
     require('windicss/plugin/forms'),
     require('windicss/plugin/aspect-ratio'),

@@ -9,7 +9,7 @@ module.exports = {
   parser: 'vue-eslint-parser',
   parserOptions: {
     parser: '@typescript-eslint/parser',
-    project: ['./tsconfig.json'],
+    project: ['./tsconfig.eslint.json'],
     ecmaVersion: 2021,
     ecmaFeatures: {
       jsx: true,
