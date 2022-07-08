@@ -1,5 +1,5 @@
 import path from 'path';
-import { defineConfig } from 'vite';
+import { defineConfig } from 'vitest/config';
 import Vue from '@vitejs/plugin-vue';
 import Pages from 'vite-plugin-pages';
 import Layouts from 'vite-plugin-vue-layouts';
@@ -7,7 +7,8 @@ import Components from 'unplugin-vue-components/vite';
 import AutoImport from 'unplugin-auto-import/vite';
 import Inspect from 'vite-plugin-inspect';
 import WindiCSS from 'vite-plugin-windicss';
-import VueI18n from '@intlify/vite-plugin-vue-i18n'
+import VueI18n from '@intlify/vite-plugin-vue-i18n';
+import checker from 'vite-plugin-checker';
 
 export default defineConfig({
   resolve: {
@@ -73,6 +74,7 @@ export default defineConfig({
     // https://github.com/antfu/vite-plugin-inspect
     // Visit http://localhost:3333/__inspect/ to see the inspector
     Inspect(),
+    checker({ typescript: true }),
   ],
 
   // https://github.com/vitest-dev/vitest
